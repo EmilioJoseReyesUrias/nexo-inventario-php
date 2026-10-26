@@ -130,7 +130,7 @@ if ($editingId) {
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Nexo Inventario | PHP + MySQL</title>
+  <title>Control de inventario Cloud | PHP + MySQL</title>
   <link rel="stylesheet" href="/estilos.css">
 </head>
 <body>
