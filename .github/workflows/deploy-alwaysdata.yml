@@ -28,6 +28,10 @@ jobs:
           printf '%s\n' "$SSH_HOSTS" > ~/.ssh/known_hosts
           chmod 600 ~/.ssh/known_hosts
 
+      - name: Verificar huella SSH
+        run: |
+          ssh-keygen -y -f ~/.ssh/id_ed25519 | ssh-keygen -lf - -E sha256
+
       - name: Actualizar Nexo Inventario
         run: |
           ssh -o BatchMode=yes \
